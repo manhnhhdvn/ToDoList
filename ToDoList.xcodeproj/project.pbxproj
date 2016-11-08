@@ -101,14 +101,15 @@
 		65088BBF1DD1C61A00B37BDA /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				65088BF31DD1CA0600B37BDA /* Controls */,
+				65088BF41DD1CA1600B37BDA /* Models */,
+				65088BF51DD1CA2200B37BDA /* Services */,
+				65088BF61DD1CB6300B37BDA /* Stores */,
+				65088BF71DD1CB8800B37BDA /* Views */,
 				65088BC31DD1C61A00B37BDA /* AppDelegate.h */,
 				65088BC41DD1C61A00B37BDA /* AppDelegate.m */,
-				65088BC61DD1C61A00B37BDA /* ViewController.h */,
-				65088BC71DD1C61A00B37BDA /* ViewController.m */,
-				65088BC91DD1C61A00B37BDA /* Main.storyboard */,
-				65088BCC1DD1C61A00B37BDA /* Assets.xcassets */,
-				65088BCE1DD1C61A00B37BDA /* LaunchScreen.storyboard */,
 				65088BD11DD1C61A00B37BDA /* Info.plist */,
+				65088BCC1DD1C61A00B37BDA /* Assets.xcassets */,
 				65088BC01DD1C61A00B37BDA /* Supporting Files */,
 			);
 			path = ToDoList;
@@ -138,6 +139,45 @@
 				65088BE71DD1C61A00B37BDA /* Info.plist */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		65088BF31DD1CA0600B37BDA /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				65088BC61DD1C61A00B37BDA /* ViewController.h */,
+				65088BC71DD1C61A00B37BDA /* ViewController.m */,
+				65088BCE1DD1C61A00B37BDA /* LaunchScreen.storyboard */,
+				65088BC91DD1C61A00B37BDA /* Main.storyboard */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		65088BF41DD1CA1600B37BDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		65088BF51DD1CA2200B37BDA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		65088BF61DD1CB6300B37BDA /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		65088BF71DD1CB8800B37BDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
