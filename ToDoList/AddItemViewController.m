@@ -10,6 +10,9 @@
 
 @interface AddItemViewController()
 
+@property (weak, nonatomic) IBOutlet UITextField *item;
+@property (weak, nonatomic) IBOutlet UIDatePicker *time;
+
 @end
 
 @implementation AddItemViewController

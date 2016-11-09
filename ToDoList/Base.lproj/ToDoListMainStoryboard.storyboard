@@ -100,6 +100,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="item" destination="6Xj-gR-rTc" id="gOT-Gu-7SW"/>
+                        <outlet property="time" destination="gLY-iB-1DR" id="DVv-fS-1qv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zam-pH-44W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

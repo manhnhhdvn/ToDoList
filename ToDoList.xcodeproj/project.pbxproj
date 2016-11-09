@@ -18,6 +18,13 @@
 		65088C001DD2A6E900B37BDA /* ToDoItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65088BFF1DD2A6E900B37BDA /* ToDoItemCell.xib */; };
 		657A79381DD2D51700C8585B /* ToDoItemCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 657A79371DD2D51700C8585B /* ToDoItemCell.h */; };
 		657A793A1DD2D58900C8585B /* ToDoItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A79391DD2D58900C8585B /* ToDoItemCell.m */; };
+		657A793C1DD2EC3100C8585B /* ToDoListItemEntity.h in Sources */ = {isa = PBXBuildFile; fileRef = 657A793B1DD2EC3100C8585B /* ToDoListItemEntity.h */; };
+		657A793E1DD2EC6B00C8585B /* ToDoListItemEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A793D1DD2EC6B00C8585B /* ToDoListItemEntity.m */; };
+		657A79401DD2F36C00C8585B /* ToDoListStore.h in Sources */ = {isa = PBXBuildFile; fileRef = 657A793F1DD2F36C00C8585B /* ToDoListStore.h */; };
+		657A79421DD2F3E200C8585B /* ToDoListStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A79411DD2F3E200C8585B /* ToDoListStore.m */; };
+		657A79461DD2F47000C8585B /* ReamlStoreBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A79451DD2F47000C8585B /* ReamlStoreBase.m */; };
+		657A79481DD2F83E00C8585B /* ToDoListService.h in Sources */ = {isa = PBXBuildFile; fileRef = 657A79471DD2F83E00C8585B /* ToDoListService.h */; };
+		657A794A1DD2F8DB00C8585B /* ToDoListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A79491DD2F8DB00C8585B /* ToDoListService.m */; };
 		65FE94E81DD2B8AA00BEF24C /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94E71DD2B8AA00BEF24C /* AddItemViewController.m */; };
 		8EEFA485D59E0465A1E117AE /* Pods_ToDoList_ToDoListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64204C0A17E9CDFD09CA53 /* Pods_ToDoList_ToDoListUITests.framework */; };
 		F0564E689AACAF93ABC058BD /* Pods_ToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345B7F09FBF4C00AC0D8BE72 /* Pods_ToDoList.framework */; };
@@ -64,6 +71,14 @@
 		65088BFF1DD2A6E900B37BDA /* ToDoItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoItemCell.xib; sourceTree = "<group>"; };
 		657A79371DD2D51700C8585B /* ToDoItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItemCell.h; sourceTree = "<group>"; };
 		657A79391DD2D58900C8585B /* ToDoItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItemCell.m; sourceTree = "<group>"; };
+		657A793B1DD2EC3100C8585B /* ToDoListItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListItemEntity.h; sourceTree = "<group>"; };
+		657A793D1DD2EC6B00C8585B /* ToDoListItemEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListItemEntity.m; sourceTree = "<group>"; };
+		657A793F1DD2F36C00C8585B /* ToDoListStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListStore.h; sourceTree = "<group>"; };
+		657A79411DD2F3E200C8585B /* ToDoListStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListStore.m; sourceTree = "<group>"; };
+		657A79441DD2F46600C8585B /* ReamlStoreBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReamlStoreBase.h; sourceTree = "<group>"; };
+		657A79451DD2F47000C8585B /* ReamlStoreBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReamlStoreBase.m; sourceTree = "<group>"; };
+		657A79471DD2F83E00C8585B /* ToDoListService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListService.h; sourceTree = "<group>"; };
+		657A79491DD2F8DB00C8585B /* ToDoListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListService.m; sourceTree = "<group>"; };
 		65FE94E61DD2B85900BEF24C /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		65FE94E71DD2B8AA00BEF24C /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		799B6922723DDEF1ED7EC993 /* Pods_ToDoList_ToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList_ToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +195,8 @@
 		65088BF41DD1CA1600B37BDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				657A793B1DD2EC3100C8585B /* ToDoListItemEntity.h */,
+				657A793D1DD2EC6B00C8585B /* ToDoListItemEntity.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -187,6 +204,8 @@
 		65088BF51DD1CA2200B37BDA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				657A79471DD2F83E00C8585B /* ToDoListService.h */,
+				657A79491DD2F8DB00C8585B /* ToDoListService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -194,6 +213,9 @@
 		65088BF61DD1CB6300B37BDA /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				657A79431DD2F44A00C8585B /* Common */,
+				657A793F1DD2F36C00C8585B /* ToDoListStore.h */,
+				657A79411DD2F3E200C8585B /* ToDoListStore.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -206,6 +228,15 @@
 				65088BFF1DD2A6E900B37BDA /* ToDoItemCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		657A79431DD2F44A00C8585B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				657A79441DD2F46600C8585B /* ReamlStoreBase.h */,
+				657A79451DD2F47000C8585B /* ReamlStoreBase.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		7FE84A42B19CECE24D1EC171 /* Pods */ = {
@@ -512,12 +543,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657A79461DD2F47000C8585B /* ReamlStoreBase.m in Sources */,
+				657A794A1DD2F8DB00C8585B /* ToDoListService.m in Sources */,
 				65088BC81DD1C61A00B37BDA /* ToDoListMainController.m in Sources */,
+				657A79401DD2F36C00C8585B /* ToDoListStore.h in Sources */,
+				657A79481DD2F83E00C8585B /* ToDoListService.h in Sources */,
 				65FE94E81DD2B8AA00BEF24C /* AddItemViewController.m in Sources */,
+				657A793E1DD2EC6B00C8585B /* ToDoListItemEntity.m in Sources */,
+				657A793C1DD2EC3100C8585B /* ToDoListItemEntity.h in Sources */,
 				657A79381DD2D51700C8585B /* ToDoItemCell.h in Sources */,
 				65088BC51DD1C61A00B37BDA /* AppDelegate.m in Sources */,
 				657A793A1DD2D58900C8585B /* ToDoItemCell.m in Sources */,
 				65088BC21DD1C61A00B37BDA /* main.m in Sources */,
+				657A79421DD2F3E200C8585B /* ToDoListStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
