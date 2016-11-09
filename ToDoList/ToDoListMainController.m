@@ -22,6 +22,10 @@ static NSString *const kToDoItemCell = @"ToDoItemCell";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ToDoItemCell class]) bundle:nil] forCellReuseIdentifier:kToDoItemCell];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadTable)
+                                                 name:@"reloadData"
+                                               object:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -52,12 +56,30 @@ static NSString *const kToDoItemCell = @"ToDoItemCell";
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+//    return 10;
+    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ToDoItemCell *cell = [tableView dequeueReusableCellWithIdentifier:kToDoItemCell forIndexPath:indexPath];
+    
+    NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    UILocalNotification *localNotification = [localNotifications objectAtIndex:indexPath.row];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"JST"];
+    [dateFormatter setTimeZone:timeZone];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    [cell.item setText:localNotification.alertBody];
+    [cell.time setText:[dateFormatter stringFromDate:localNotification.fireDate]];
+    
     return cell;
+}
+
+- (void)reloadTable
+{
+    [self.tableView reloadData];
 }
 
 @end

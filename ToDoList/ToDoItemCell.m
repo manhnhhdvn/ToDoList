@@ -13,5 +13,7 @@
 @end
 
 @implementation ToDoItemCell
+- (IBAction)delete:(id)sender {
+}
 
 @end

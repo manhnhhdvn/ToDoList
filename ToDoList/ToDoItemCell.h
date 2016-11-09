@@ -10,4 +10,7 @@
 
 @interface ToDoItemCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *item;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+
 @end

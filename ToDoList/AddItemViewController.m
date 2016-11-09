@@ -19,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.hidesBackButton = YES;
+    _time.date = [NSDate date];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -32,6 +33,23 @@
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)save:(id)sender {
+    [self.item resignFirstResponder];
     
+    NSDate *pickedDate = [self.time date];  // Current date
+    
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"JST"];
+    
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = pickedDate;
+    localNotification.alertBody = self.item.text;
+    localNotification.alertAction = @"Show the item";
+    localNotification.timeZone = timeZone;
+    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

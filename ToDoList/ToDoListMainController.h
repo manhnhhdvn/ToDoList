@@ -11,6 +11,7 @@
 
 @interface ToDoListMainController : UIViewController
 
+-(void)reloadTable;
 
 @end
 

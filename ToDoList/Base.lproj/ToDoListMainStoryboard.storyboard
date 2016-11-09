@@ -22,9 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YTz-c0-ydW">
-                                <rect key="frame" x="0.0" y="-7" width="375" height="674"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cs3-4n-0RD" id="FiF-DB-c5t"/>
+                                    <outlet property="delegate" destination="cs3-4n-0RD" id="zEY-52-VED"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,7 +100,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="hOe-Cd-m0Z">
                             <connections>
-                                <action selector="save:" destination="F93-OI-3Ig" id="TbE-V4-eoK"/>
+                                <action selector="save:" destination="F93-OI-3Ig" id="Y20-Qo-tl5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
