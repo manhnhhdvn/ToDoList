@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDoItemCell.h"
 
 @interface ToDoListMainController : UIViewController
 

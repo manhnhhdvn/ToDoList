@@ -16,6 +16,8 @@
 		65088BDB1DD1C61A00B37BDA /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65088BDA1DD1C61A00B37BDA /* ToDoListTests.m */; };
 		65088BE61DD1C61A00B37BDA /* ToDoListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65088BE51DD1C61A00B37BDA /* ToDoListUITests.m */; };
 		65088C001DD2A6E900B37BDA /* ToDoItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65088BFF1DD2A6E900B37BDA /* ToDoItemCell.xib */; };
+		657A79381DD2D51700C8585B /* ToDoItemCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 657A79371DD2D51700C8585B /* ToDoItemCell.h */; };
+		657A793A1DD2D58900C8585B /* ToDoItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A79391DD2D58900C8585B /* ToDoItemCell.m */; };
 		65FE94E81DD2B8AA00BEF24C /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FE94E71DD2B8AA00BEF24C /* AddItemViewController.m */; };
 		8EEFA485D59E0465A1E117AE /* Pods_ToDoList_ToDoListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE64204C0A17E9CDFD09CA53 /* Pods_ToDoList_ToDoListUITests.framework */; };
 		F0564E689AACAF93ABC058BD /* Pods_ToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345B7F09FBF4C00AC0D8BE72 /* Pods_ToDoList.framework */; };
@@ -60,6 +62,8 @@
 		65088BE51DD1C61A00B37BDA /* ToDoListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListUITests.m; sourceTree = "<group>"; };
 		65088BE71DD1C61A00B37BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65088BFF1DD2A6E900B37BDA /* ToDoItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoItemCell.xib; sourceTree = "<group>"; };
+		657A79371DD2D51700C8585B /* ToDoItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItemCell.h; sourceTree = "<group>"; };
+		657A79391DD2D58900C8585B /* ToDoItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItemCell.m; sourceTree = "<group>"; };
 		65FE94E61DD2B85900BEF24C /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		65FE94E71DD2B8AA00BEF24C /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		799B6922723DDEF1ED7EC993 /* Pods_ToDoList_ToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList_ToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +201,8 @@
 		65088BF71DD1CB8800B37BDA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				657A79371DD2D51700C8585B /* ToDoItemCell.h */,
+				657A79391DD2D58900C8585B /* ToDoItemCell.m */,
 				65088BFF1DD2A6E900B37BDA /* ToDoItemCell.xib */,
 			);
 			name = Views;
@@ -508,7 +514,9 @@
 			files = (
 				65088BC81DD1C61A00B37BDA /* ToDoListMainController.m in Sources */,
 				65FE94E81DD2B8AA00BEF24C /* AddItemViewController.m in Sources */,
+				657A79381DD2D51700C8585B /* ToDoItemCell.h in Sources */,
 				65088BC51DD1C61A00B37BDA /* AppDelegate.m in Sources */,
+				657A793A1DD2D58900C8585B /* ToDoItemCell.m in Sources */,
 				65088BC21DD1C61A00B37BDA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
